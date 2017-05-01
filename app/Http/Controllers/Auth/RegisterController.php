@@ -63,17 +63,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        Student::creating([
-            'code' => $data['name'],
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
-            'faculty' => $data['faculty'],
-            'birth_date' => $data['birth_date'],
-            'gender' => $data['gender'],
-            'address' => $data['address'],
-            'email' => $data['email'],
-            'phone' => $data['phone'],
-        ]);
+//        Student::create([
+//            'code' => $data['name'],
+//            'first_name' => $data['first_name'],
+//            'last_name' => $data['last_name'],
+//            'faculty' => $data['faculty'],
+//            'birth_date' => $data['birth_date'],
+//            'gender' => $data['gender'],
+//            'address' => $data['address'],
+//            'email' => $data['email'],
+//            'phone' => $data['phone'],
+//        ]);
 
         return User::create([
             'name' => $data['name'],
